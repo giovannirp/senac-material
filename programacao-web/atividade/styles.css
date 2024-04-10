@@ -1,0 +1,85 @@
+/*Zerando o espaçamento padrão*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Criando Classes*/
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  height: 100px;
+  background: #004a8d;
+  padding-left: 20px;
+  /*Flexbox*/
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+/*Estilizando Box*/
+section {
+  padding-top: 25px;
+  /*Flexbox*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 2px solid #a3a3a3;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.box h1 {
+  padding: 20px;
+}
+
+.box p {
+  padding: 20px;
+  color:#252424;
+}
+
+/*tabela produtos*/
+.lista {
+  border: 1px solid rgb(59, 58, 58);
+  max-width: 700px;
+  margin: 0px auto;
+}
+
+.lista table {
+  width: 100%;
+  text-align: center; /*Centralizar texto*/
+}
+
+.trPrincipal {
+  background: rgb(40, 3, 79);
+  color: #fff;
+}
+
+.trPrime {
+  background: rgb(140, 142, 142);
+  color: #fff;
+}
+
+footer {
+  background: #000000;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  color: #ed145b;
+  padding: 10px;
+}
