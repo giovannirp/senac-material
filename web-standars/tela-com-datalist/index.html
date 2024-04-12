@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <h1>Listagem</h1>
+    </header>
+
+    <aside>
+      <form>
+        <div class="form-control">
+          <input type="text" placeholder="Procure seu time" list="faixa" />
+
+          <datalist id="faixa">
+            <option value="Santos">Times de SP</option>
+            <option value="Vasco">Times do RJ</option>
+          </datalist>
+        </div>
+      </form>
+    </aside>
+
+    <section class="content">
+      <figure>
+        <img src="./img/banner.jpg" alt="Imagem" />
+
+        <figcaption>
+          <p>lorem ipsum lorem</p>
+        </figcaption>
+      </figure>
+
+      <section>
+        <h1>lorem ipsum</h1>
+
+        <details open>
+          <summary>Times de futebol</summary>
+
+          <ul>
+            <li>Vasco</li>
+            <li>Flamengo</li>
+            <li>Paulista</li>
+          </ul>
+        </details>
+        <hr />
+        <details>
+          <summary>Nomes de usuários</summary>
+
+          <ul>
+            <li>Caio</li>
+            <li>Fernando</li>
+            <li>Juliana</li>
+          </ul>
+        </details>
+
+      </section>
+
+    </section>
+
+    <footer>
+      <p>@2024 - Todos os direitos reservados</p>
+    </footer>
+
+
+  </main>
+</body>
+
+</html>
