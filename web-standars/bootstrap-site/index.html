@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <!--Menu de navegação -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- carousel   -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://fastly.picsum.photos/id/221/1117/300.jpg?hmac=mCLTciNhqzaYf5dncXHbzWp9xCL68bi2O30wqXBKDsY" class="d-block w-100" alt="...">
+        </div>
+
+        <div class="carousel-item active">
+          <img src="https://fastly.picsum.photos/id/1021/1117/300.jpg?hmac=j5_bChLsTFirfBFvkK4K9xvG4gKg-wWugiusPWbK7Cg" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- cards -->
+    <div class="mt-5 mb-4 d-md-flex flex-row justify-content-around">
+      <div class="card col-md-5 mb-4">
+        <img src="https://fastly.picsum.photos/id/1033/330/170.jpg?hmac=Fre9vp5Ifc5HCwe1NL437BI4E_mG4EGkKFLFDxoy2M0" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary w-100">Clique aqui</a>
+        </div>
+      </div>
+
+      <div class="card col-md-5 mb-4">
+        <img src="https://fastly.picsum.photos/id/1033/330/170.jpg?hmac=Fre9vp5Ifc5HCwe1NL437BI4E_mG4EGkKFLFDxoy2M0" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary w-100">Clique aqui</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- formulario novidades -->
+    <div class="d-flex justify-content-center mb-4">
+      <form action="" class="col-md-10">
+        <h1 class="text-info display-6">Receba novidades</h1>
+        <div class="form-control">
+          <label class="form-label" for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome"  />
+
+          <label class="form-label" for="email">Email</label>
+          <input type="text" class="form-control" id="email" />
+
+        <div class="mt-3 d-flex justify-content-center">
+          <button class="btn btn-success">Enviar</button>
+        </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+    
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+</body>
+</html>
