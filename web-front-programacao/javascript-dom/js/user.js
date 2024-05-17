@@ -18,3 +18,8 @@ function cadUser(event) {
   result.innerHTML += `<li> Bem vindo, ${textUser.value} </li>`;
   clearInput();
 }
+
+function mostrar() {
+  document.getElementById("resultNome").innerHTML = "Luís Carlos";
+}
+
