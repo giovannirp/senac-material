@@ -1,3 +1,8 @@
+.info-user {
+  max-width: 400px;
+  margin: 58px auto;
+}
+
 .inputForm {
   width: 100%;
   max-width: 200px;
@@ -13,3 +18,4 @@
   border: 2px solid #8e1883;
   color: #fff;
 }
+

@@ -16,4 +16,5 @@ function cadUser(event) {
   }
   
   result.innerHTML += `<li> Bem vindo, ${textUser.value} </li>`;
+  clearInput();
 }
