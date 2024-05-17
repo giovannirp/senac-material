@@ -1,0 +1,16 @@
+.inputForm {
+  width: 100%;
+  max-width: 200px;
+  height: 25px;
+  border: 2px solid #7f7b7b;
+  padding: 2px;
+  outline: none;
+}
+
+#screen-name {
+  height: 32px;
+  background: #be1111;
+  border: 2px solid #8e1883;
+  color: #fff;
+  
+}
