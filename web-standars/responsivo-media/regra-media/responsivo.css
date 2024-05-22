@@ -1,0 +1,36 @@
+/* Mobile*/
+@media screen and (max-width: 480px) {
+  body {
+    background: red;
+  }
+}
+
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    background: orange;
+  }
+}
+
+/*Small tablet */
+@media (min-width: 768px) and (max-width: 991px) { 
+  body {
+    background: pink;
+  }
+
+}
+
+/* Tablets/Laptops */
+@media (min-width: 992px) and (max-width: 1199px) { 
+  body {
+    background: rgb(0, 128, 79);
+  }
+}
+
+/* Desktops */
+@media (min-width: 1200px) { 
+  body {
+    background: purple;
+  }
+}
+

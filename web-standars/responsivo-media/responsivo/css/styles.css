@@ -1,0 +1,35 @@
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Regras responsivas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box {
+        width: 100%;
+    }
+}
