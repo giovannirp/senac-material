@@ -18,7 +18,7 @@
 }
 
 .box p {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.5;
 }
 
@@ -31,5 +31,9 @@
     
     .box {
         width: 100%;
+    }
+
+    .box p {
+        font-size: 14px;
     }
 }
