@@ -12,7 +12,7 @@ console.log(clasNameListArray.includes("tested"))
 poupup.addEventListener("click", function(event) {
   const classOfClickElement = event.target.classList[0];
 
-  const clasNameListArray = ["popup-close", "poupup-link", "poupup-wrapper"];
+  const clasNameListArray = ["popup-close", "popup-link", "popup-wrapper"];
 
   console.log(clasNameListArray);
 
