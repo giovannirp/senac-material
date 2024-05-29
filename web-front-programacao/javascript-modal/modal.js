@@ -1,5 +1,5 @@
 const button = document.querySelector("button");
-const poupup = document.querySelector(".poupup-wrapper");
+const poupup = document.querySelector(".popup-wrapper");
 
 button.addEventListener("click", function(){
   poupup.classList.add('d-block');
@@ -14,12 +14,12 @@ poupup.addEventListener("click", function(event) {
 
   const clasNameListArray = ["popup-close", "poupup-link", "poupup-wrapper"];
 
-  console.log(clasNameListArray)
+  console.log(clasNameListArray);
 
   const isClassList = clasNameListArray.includes(classOfClickElement);
 
   if(isClassList) {
-    poupup.classList.remove('d-block')
+    poupup.classList.remove('d-block');
   }
 
 });
