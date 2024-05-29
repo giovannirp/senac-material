@@ -11,16 +11,15 @@ console.log(clasNameListArray.includes("tested"))
 
 poupup.addEventListener("click", function(event) {
   const classOfClickElement = event.target.classList[0];
-  console.log(classOfClickElement);
 
   const clasNameListArray = ["popup-close", "poupup-link", "poupup-wrapper"];
 
-  const isClassList = clasNameListArray.includes(classOfClickElement);
+  // console.log(clasNameListArray)
 
-  console.log(isClassList);
+  const isClassList = clasNameListArray.includes(classOfClickElement);
 
   if(isClassList) {
     poupup.classList.remove('d-block')
   }
 
-})
+});
