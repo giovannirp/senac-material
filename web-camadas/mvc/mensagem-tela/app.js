@@ -5,7 +5,7 @@ const model = {
 
 // View: Atualiza a interface
 const view = {
-  button: document.querySelector("#myButton"),
+  button: document.querySelector("#buttonClick"),
   messageParagraph: document.querySelector("#message"),
 
   // Mostra a mensagem na tela
