@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const PORT = 3000;
 
 // indicar para express ler body com json
 app.use(express.json());
@@ -33,4 +34,9 @@ app.get('/listaNomes/:id' , (req, res) => {
     res.json(buscarNomePorId(index));
 });
 
-app.listen(3000);
+//app.listen(3000);
+
+// excutar a porta 3000
+app.listen(PORT, () => {
+  console.log(`Servidor rodando no endereço http://localhost:${PORT}`);
+});
