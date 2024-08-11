@@ -1,0 +1,8 @@
+Verificar node na maqui e fazer instalação
+npm -v
+node -v
+
+ npm init -> para criar o projeto
+
+ - Criando um servidor Express
+npm install express
