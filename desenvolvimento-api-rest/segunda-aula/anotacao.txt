@@ -1,0 +1,12 @@
+instalar o express
+- npm install express
+
+criando um arquivo json
+{
+	"nome": "Tiago",
+	"idade": "23"
+}
+
+-Instalando nodemon
+* npm install nodemon
+*
