@@ -1,0 +1,45 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-container {
+  /*Flexbox*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgb(65, 155, 239);
+  border: 1x solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+  height: 140px;
+  padding: 20px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #700404;
+  padding-bottom: 10px;
+}
+
+.card p {
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: rgb(3, 8, 72);
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
