@@ -1,0 +1,6 @@
+npm i mysql2
+
+{
+  "selecao": "Jamaica",
+  "grupo": "Y"
+}
