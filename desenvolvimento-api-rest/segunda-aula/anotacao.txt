@@ -10,3 +10,6 @@ criando um arquivo json
 -Instalando nodemon
 * npm install nodemon
 *
+
+no packge coloquei "type": "module",
+instalei no código json-viewer/

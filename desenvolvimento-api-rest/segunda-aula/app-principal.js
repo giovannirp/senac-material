@@ -61,7 +61,6 @@ app.put('/listaNomes/:id', (req, res) => {
 
   res.json(nomes);
 })
-
 // excutar a porta 3000
 app.listen(PORT, () => {
   console.log(`Servidor rodando no endereço http://localhost:${PORT}`);
