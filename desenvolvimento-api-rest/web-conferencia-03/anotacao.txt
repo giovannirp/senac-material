@@ -1,0 +1,4 @@
+{
+  "selecao": "Brasil novo",
+  "grupo": "G"
+}
