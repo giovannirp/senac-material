@@ -15,7 +15,7 @@ function App() {
           <p>Aqui você encontra as melhores ofertas!</p>
         </Banner>
 
-        <ImageCard caption="Uma imagem interessante" />
+        <ImageCard  />
 
         <br />
       </div>

@@ -7,7 +7,7 @@ const ImageCard = (props) => {
   return (
     <div className="image-card">
       <img src={img1} alt={props.caption || 'Imagem'} className="image-card-img" />
-      {props.caption && <p className="image-card-caption">{props.caption}</p>}
+      <p className="image-card-caption">{props.caption}</p>
     </div>
   );
 }
