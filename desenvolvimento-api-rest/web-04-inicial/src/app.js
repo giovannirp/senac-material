@@ -1,4 +1,5 @@
 import express from "express";
+import conexao from "../infra/conexao.js";
 const app = express();
 
 // indicar para express ler body com json
