@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import ImageCard from "./Components/ImgCard/ImgCard";
 import "./app.css";
 import NewCard from "./Components/NewCard";
+import Aumentar from "./Components/Aumentar";
 
 function App() {
   const handleClick = () => {
@@ -27,6 +28,8 @@ function App() {
         <Button text="Clique Aqui" onClick={handleClick} />
 
         <ImageCard caption="Uma imagem interessante" />
+
+        <Aumentar />
         
         <br />
       </div>
