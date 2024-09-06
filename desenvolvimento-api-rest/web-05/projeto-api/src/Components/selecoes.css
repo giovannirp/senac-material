@@ -1,0 +1,48 @@
+/* Estilo para o contêiner principal */
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* Estilo para o título */
+.title {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+/* Estilo para a lista */
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilo para cada item da lista */
+.list-item {
+  padding: 10px;
+  margin: 8px 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito hover nos itens da lista */
+.list-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Estilo para o nome da seleção */
+.selecao-name {
+  color: #555;
+}
+
+/* Estilo para o grupo */
+.grupo {
+  color: #888;
+}

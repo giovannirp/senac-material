@@ -4,6 +4,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+  max-width: 1000px;
+  margin: 0 auto; 
+}
+
 .text-principal {
   padding: 10px;
 }

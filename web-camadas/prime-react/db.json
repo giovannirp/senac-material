@@ -1,0 +1,22 @@
+{
+  "pessoas": [
+    {
+      "id": "1",
+      "nome": "Fabio",
+      "email": "fabio@hotmail.com",
+      "telefone": 145454555
+    },
+    {
+      "id": "2",
+      "nome": "Juliana",
+      "email": "juliana@hotmail.com",
+      "telefone": 78788888
+    },
+    {
+      "id": "3",
+      "nome": "Fernanda",
+      "email": "fernanda@hotmail.com",
+      "telefone": 787878788
+    }
+  ]
+}
