@@ -1,9 +1,10 @@
 import Banner from "./Components/Banner";
 import Button from "./Components/Button";
-import Card from "./Components/Card";
+import Card from "./Components/Card/Card";
 import Header from "./Components/Header";
-import ImageCard from "./Components/ImgCard";
+import ImageCard from "./Components/ImgCard/ImgCard";
 import "./app.css";
+import NewCard from "./Components/NewCard";
 
 function App() {
   const handleClick = () => {
@@ -14,6 +15,10 @@ function App() {
       <div className="container">
         <Header title="Meu site" />
         <Card />
+        <NewCard>
+          <h1>Olá teste</h1>
+          <h2>Novo teste</h2>
+        </NewCard>
         <Banner>
           <h1>Bem-vindo ao Meu Site</h1>
           <p>Aqui você encontra as melhores ofertas!</p>
@@ -21,9 +26,8 @@ function App() {
         
         <Button text="Clique Aqui" onClick={handleClick} />
 
-        <ImageCard  />
-
-
+        <ImageCard caption="Uma imagem interessante" />
+        
         <br />
       </div>
     </>

@@ -1,7 +1,7 @@
 import "./ImgCard.css"
 
 // Importe a imagem diretamente
-import img1 from '../assets/img/img-card.jpg';
+import img1 from '../../assets/img/img-card.jpg';
 
 const ImageCard = (props) => {
   return (
