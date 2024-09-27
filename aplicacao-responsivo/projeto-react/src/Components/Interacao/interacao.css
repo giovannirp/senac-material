@@ -1,0 +1,19 @@
+/* Interacao.css */
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button.clicado {
+    background-color: green;
+  }

@@ -4,7 +4,7 @@ import "./nav.css";
 export default function Nav() {
   return (
     <nav>
-      <ul class="menu">
+      <ul className="menu">
         <li>
           <a href="/">Home</a>
         </li>
@@ -15,7 +15,7 @@ export default function Nav() {
           <a href="#servicos">Serviços</a>
         </li>
         <li>
-          <a href="#contato">Contato</a>
+          <a href="/contato">Contato</a>
         </li>
       </ul>
     </nav>

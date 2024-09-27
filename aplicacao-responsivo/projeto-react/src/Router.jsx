@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import Sobre from './Pages/Sobre'
 import Nav from './Components/Nav'
 import NotFound from './Pages/NotFound'
+import Contato from './Pages/Contato'
 
 export default function Router() {
     return (
@@ -12,6 +13,7 @@ export default function Router() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/sobre" element={<Sobre />} />
+            <Route path="/contato" element={<Contato />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
