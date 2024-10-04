@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./style.css";
 
 export default function Contato() {
@@ -11,6 +13,9 @@ export default function Contato() {
 
   // Estado do formulário
   const [formState, setFormState] = useState(initilForm);
+
+   // Estado para armazenar a lista de contatos
+   const [listaContatos, setListaContatos] = useState([]);
 
   // Função para lidar com a alteração dos campos de entrada
   const handleInput = (event) => {
@@ -37,7 +42,8 @@ export default function Contato() {
 
     // Validação dos campos
     if (formState.nome === "" || formState.email === "" || formState.telefone === "") {
-        alert("Todos os campos são obrigatórios!");
+        // alert("Todos os campos são obrigatórios!");
+        toast.error("Todos os campos são obrigatórios!");
         return false;
     }
 
@@ -50,9 +56,36 @@ export default function Contato() {
     // Salva de volta no localStorage
     localStorage.setItem("contatos", JSON.stringify(contatos));
 
+     // Atualiza a lista de contatos no estado para refletir em tempo real
+    setListaContatos(contatos);
+
     // Limpa o formulário
     setFormState(initilForm);
   };
+
+  const handleDelete = (index) => {
+    // Carrega os contatos do localStorage
+    const storedContatos = JSON.parse(localStorage.getItem("contatos")) || [];
+  
+    // Remove o contato pelo índice
+    storedContatos.splice(index, 1);
+  
+    // Atualiza o localStorage com a nova lista
+    localStorage.setItem("contatos", JSON.stringify(storedContatos));
+  
+    // Atualiza o estado com a nova lista
+    setListaContatos(storedContatos);
+  
+    toast.success("Contato deletado com sucesso!");
+  };
+
+    // Função para carregar os contatos do localStorage ao iniciar o componente
+    useEffect(() => {
+      const storedContatos = JSON.parse(localStorage.getItem("contatos")) || [];
+      setListaContatos(storedContatos);
+    }, []);
+
+    
 
   return (
     <div className="container-contato">
@@ -96,7 +129,30 @@ export default function Contato() {
         <div className="form-control">
           <button type="submit">Enviar</button>
         </div>
+        <ToastContainer />
       </form>
+
+      {/* Lista de contatos cadastrados */}
+      <div className="lista-contatos">
+        <hr />
+        <h2>Contatos Cadastrados</h2>
+        {listaContatos.length > 0 ? (
+          <ul>
+            {listaContatos.map((contato, index) => (
+              <li key={index}>
+                <p><strong>Nome:</strong> {contato.nome}</p>
+                <p><strong>Email:</strong> {contato.email}</p>
+                <p><strong>Telefone:</strong> {contato.telefone}</p>
+                <p><small><strong>Criado em:</strong> {new Date(contato.createdAt).toLocaleString()}</small></p>
+                <button className="btn-danger" onClick={() => handleDelete(index)}>Deletar</button>
+
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p>Nenhum contato cadastrado.</p>
+        )}
+      </div>
     </div>
   );
 }

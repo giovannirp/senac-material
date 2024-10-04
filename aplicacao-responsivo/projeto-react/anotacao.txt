@@ -1,2 +1,5 @@
 instalando rotas
 npm i react-router-dom
+
+biblioteca
+https://www.npmjs.com/package/react-toastify
