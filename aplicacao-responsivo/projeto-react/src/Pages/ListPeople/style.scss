@@ -1,0 +1,65 @@
+  @import '../../assets/css/variables';
+  @import '../../assets/css/mixins';
+  
+  .container-filter {
+    h1 {
+      color: $secondary-color;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 2px solid $secondary-color;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+
+      &:focus {
+        border-color: $primary-color;
+        outline: none;
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        background-color: #f9f9f9;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #eaeaea;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &:not(:last-child) {
+          border-bottom: none;
+        }
+
+        span {
+          font-weight: bold;
+          color: $primary-color;
+        }
+      }
+    }
+
+    /* Aplicando o mixin para estilizar um botão */
+button {
+  @include button-style($primary-color, #fff); /* Cor do botão: azul com texto branco */
+  margin-top: 10px;
+}
+
+  }

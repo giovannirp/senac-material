@@ -12,7 +12,7 @@ export default function Nav() {
           <a href="/sobre">Sobre</a>
         </li>
         <li>
-          <a href="#servicos">Serviços</a>
+          <a href="listPeople">Lista</a>
         </li>
         <li>
           <a href="/contato">Contato</a>

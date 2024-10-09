@@ -3,3 +3,5 @@ npm i react-router-dom
 
 biblioteca
 https://www.npmjs.com/package/react-toastify
+
+npm install sass
