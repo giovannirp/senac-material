@@ -14,7 +14,7 @@
       padding: 10px;
       margin-bottom: 20px;
       border: 2px solid $secondary-color;
-      border-radius: 5px;
+      @include border-radius(5px);
       font-size: 16px;
       transition: border-color 0.3s ease;
 
@@ -57,9 +57,5 @@
     }
 
     /* Aplicando o mixin para estilizar um botão */
-button {
-  @include button-style($primary-color, #fff); /* Cor do botão: azul com texto branco */
-  margin-top: 10px;
-}
 
   }

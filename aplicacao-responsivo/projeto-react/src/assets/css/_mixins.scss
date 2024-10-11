@@ -1,16 +1,7 @@
-@import "../css/variables";
-
-@mixin button-style($background-color, $text-color) {
-    background-color: $background-color;
-    color: $text-color;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  
-    &:hover {
-      background-color: darken($background-color, 10%);
-    }
-  }
+// Mixin para borda arredondada
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
