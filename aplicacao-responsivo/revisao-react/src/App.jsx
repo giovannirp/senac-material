@@ -3,6 +3,7 @@ import "./App.css"
 import Header from "./Components/Header";
 import img1 from "./assets/img/img-1.jpg";
 import img2 from "./assets/img/img-2.jpg";
+import Form from "./Components/Form/Form";
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
             imageUrl={img2}
           />
         </div>
+        
+        <Form />
       </div>
     </>
   );
