@@ -4,4 +4,7 @@ npm i react-router-dom
 biblioteca
 https://www.npmjs.com/package/react-toastify
 
+npx json-server db.json --port 7000
+
+
 npm install sass

@@ -12,6 +12,9 @@ export default function Nav() {
           <a href="/sobre">Sobre</a>
         </li>
         <li>
+          <a href="usuarios">Usuários</a>
+        </li>
+        <li>
           <a href="listPeople">Lista</a>
         </li>
         <li>
