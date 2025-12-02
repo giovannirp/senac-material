@@ -21,72 +21,54 @@ app.get("/", function (req, res) {
   res.send("Testando API");
 });
 
-// Buscar todas as seleções
+// Buscar todas as seleções (bem simples)
 app.get('/selecoes', (req, res) => {
   const sql = "SELECT * FROM selecoes";
+
   conexao.query(sql, (erro, result) => {
-    if (erro) {
-      res.status(404).json({ 'erro': erro })
-    } else {
-      res.status(200).json(result);
-    }
-  }); 
+    res.json(result);
+  });
 });
 
-// Buscando por ID
+// Buscando por ID (bem simples)
 app.get('/selecoes/:id', (req, res) => {
-  let id = req.params.id;
-  
-  const sql = "SELECT * FROM selecoes WHERE id=?;";
-  conexao.query(sql, id, (erro, result) => {
-    const linha = result[0]
-    if (erro) {
-      res.status(404).json({ 'erro': erro })
-    } else {
-      res.status(200).json(linha);
-    }
-  });
-});
-
-// Criando post para cadastrar
-app.post('/selecoes', (req, res) => {
-  let selecao = req.body;
-
-  const sql = "INSERT INTO selecoes SET ?;";
-  conexao.query(sql, selecao, (erro, result) => {
-    if (erro) {
-      res.status(400).json({ 'erro': erro })
-    } else {
-      res.status(201).json(result);
-    }
-  });
-});
-
-// Deletando registro
-app.delete('/selecoes/:id', (req, res) => {
-  let id = req.params.id;
-  const sql = "DELETE FROM selecoes WHERE id=?;";
-  conexao.query(sql, id, (erro, result) => {
-    if (erro) {
-      res.status(404).json({ 'erro': erro })
-    } else {
-      res.status(200).json(result);
-    }
-  });
-});
-
-app.put('/selecoes/:id', (req, res) => {
-  // res.json(selecoes);
   const id = req.params.id;
-  let selecao = req.body;
-  const sql = "UPDATE selecoes SET ? WHERE id=?;";
-  conexao.query(sql, [selecao, id], (erro, result) => {
-    if (erro) {
-      res.status(400).json({ 'erro': erro })
-    } else {
-      res.status(200).json(result);
-    }
+  const sql = "SELECT * FROM selecoes WHERE id=?;";
+
+  conexao.query(sql, id, (erro, result) => {
+    res.json(result[0]);
   });
-})
+});
+
+// Criando post para cadastrar (bem simples)
+app.post('/selecoes', (req, res) => {
+  const selecao = req.body;
+  const sql = "INSERT INTO selecoes SET ?;";
+
+  conexao.query(sql, selecao, () => {
+    res.json({ mensagem: "Cadastrado com sucesso!" });
+  });
+});
+
+// Deletando registro (bem simples)
+app.delete('/selecoes/:id', (req, res) => {
+  const id = req.params.id;
+  const sql = "DELETE FROM selecoes WHERE id=?;";
+
+  conexao.query(sql, id, () => {
+    res.json({ mensagem: "Deletado com sucesso!" });
+  });
+});
+
+// Atualizando registro (bem simples)
+app.put('/selecoes/:id', (req, res) => {
+  const id = req.params.id;
+  const selecao = req.body;
+  const sql = "UPDATE selecoes SET ? WHERE id=?;";
+
+  conexao.query(sql, [selecao, id], () => {
+    res.json({ mensagem: "Atualizado com sucesso!" });
+  });
+});
 
 export default app;
